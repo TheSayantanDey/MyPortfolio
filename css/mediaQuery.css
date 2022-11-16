@@ -1,0 +1,83 @@
+@media only screen and (max-width: 900px) {
+    html{
+        overflow-x: hidden;
+    }
+    body {
+        /* background-color: lightblue; */
+        
+    }
+    #navbar{
+        /* width: 100%; */
+        flex-wrap: wrap;
+    }
+    .logo{
+        position: absolute;
+        left: 0px;
+    }
+    .logo img{
+        width: 35px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .navItems{
+        position: absolute;
+        right: 100%;
+        top: 10vh;
+        height: 200px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.37);
+        transition: right 0.5s;
+    }
+    .navItems ul{
+        height: 90vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .navbar ul li{
+        background-color: rgba(0, 0, 0, 0.507);
+    }
+    .downloadCV{
+        display: none;
+    }
+    #home{
+        background-image: url('./images/bg2.jpg') no-repeat center center;
+        min-height: 90vh;
+        
+    }
+    .homeContainer{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .myImage{
+        display: none;
+    }
+    #about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutMe , .skillSet{
+        width: 90vw;
+    }
+    .aboutMeHeading::after , .skillSetHeading::after{
+        display: none;
+    }
+    .contactContent{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactForm{
+        width: 90vw;
+    }
+    .socialMedia{
+        width: 90vw;
+    }
+    #line2{
+        margin: 20px 0;
+        width: 90vw;
+        height: 1px;
+        border-top: 1px solid white;
+    }
+}

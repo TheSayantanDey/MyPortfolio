@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/scrolldown.css">
+    <link rel="stylesheet" href="./css/mediaQuery.css">
+    <script src="https://kit.fontawesome.com/284484d7e5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav id="navbar" class="navbar">
+        <div class="logo">
+            <img src="./images/logo.png" alt="" srcset="">
+        </div>
+        <div class="navItems">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#project">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="downloadCV">
+            <a href="#">Resume </a>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div id="home">
+        <!-- Home-content -->
+        <div class="homeContainer">
+            <div class="introTexts">
+                <div id="heyThere">
+                    <div id="line1"></div>
+                    <h5>Hey There</h5>
+                </div>
+                <div id="nameLine">I'm <span id="name"> SAYANTAN DEY</span></div>
+                <div id="aboutLine">I do Design and Code Websites .</div>
+                <div class="buttons">
+                    <!-- <button id="downloadbtn" class="button">Download CV</button> -->
+                    <!-- <button id="contactbtn" class="button" >Contact Me</button> -->
+                    <div id="contactbtn">
+                        <a href="#about">See more about Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="myImage">
+                <img class="img" src="./images/myImage3.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="scrollDown">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+    <!-- About  -->
+    <div id="about">
+        <div class="aboutMe">
+            <div class="aboutMeHeading">What can I do ?</div>
+            <div class="aboutMeText">
+                As the answer to the question , I can say that I can <span class="underline"> Design and Code</span>
+                that design for web applications . Also I can manage <span class="underline"> Server side development
+                with MERN stack</span> . Also I have a pretty good talent in googling things HAHA . <br><br> I don't
+                have a team with me , so I do all work alone for now. <a class="clickHere" href="#"> Click Here</a> to
+                take a look my Resume and <a class="clickHere" href="mailto: sayantandey999@gmail.com?"> Click Here</a>
+                to send me HELLO!!
+            </div>
+        </div>
+        <div class="skillSet">
+            <div class="skillSetHeading">My Skills</div>
+            <div class="skillSetContent">
+                <div class="skillSetSubHeading">Skills</div>
+                <span class="skills">Frontend Devlopment</span>
+                <span class="skills">Backend Devlopment</span>
+                <span class="skills">UI designing</span>
+                <div class="skillSetSubHeading">Languages</div>
+                <span class="skills">HTML5</span>
+                <span class="skills">CSS3</span>
+                <span class="skills">JavaScript</span>
+                <span class="skills">C-C++</span>
+                <span class="skills">Python</span>
+                <div class="skillSetSubHeading">Technology</div>
+                <span class="skills">NodeJS</span>
+                <span class="skills">MongoDB</span>
+                <span class="skills">ReactJs</span>
+                <div class="skillSetSubHeading">Tools</div>
+                <span class="skills">GitHub</span>
+                <span class="skills">Linux</span>
+                <span class="skills">Adobe XD</span>
+            </div>
+        </div>
+    </div>
+    <!-- Project Container  -->
+    <div id="project">
+        <H2>My Works</H2>
+        <p>To be added Later</p>
+    </div>
+    <!-- Contact Container  -->
+    <div id="contact">
+        <div class="contactHead">
+            <H1>GET IN TOUCH</H1>
+            <p>Feel free to contact me , I'll get back to you as soon as possible</p>
+        </div>
+        <div class="contactContent">
+            <div class="contactForm">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name*" required>
+                    <input type="email" placeholder="Enter Your Email*" required>
+                    <textarea name="" id="" cols="30" rows="6" placeholder="Enter Your Message Here*" required></textarea>
+                    <button class="submitbtn">SEND</button>
+                </form>
+            </div>
+            <div id="line2"></div>
+            <div class="socialMedia">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>&nbsp;&nbsp;VIP Bazar, Kolkata 700100, WestBengal, India</span>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>&nbsp;&nbsp;(+91) 7908505398</span>
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>&nbsp;&nbsp;deysayantan450@gmail.com</span>
+                </div>
+                <div id="line3"></div>
+                <div class="socialMediaHandels">
+                    <a href="#" style="color: white;"><i class="fa-2x fa-brands fa-facebook-f"></i></a>
+                    <a href="#" style="color: white;"><i class="fa-2x fa-brands fa-linkedin"></i></a>
+                    <a href="#" style="color: white;"><i class="fa-2x fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+.scrollDown {
+    position: relative;
+    bottom: 0px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    /* background-color: white; */
+    transform: translateY(-80px) translatex(-50%) rotate(45deg);
+}
+
+.scrollDown span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgba(255, 255, 0, 0.785);
+    border-right: 2px solid rgba(255, 255, 0, 0.785);
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+
+.scrollDown span:nth-child(1) {
+    transform: translate(-10px, -10px);
+    animation-delay: -0.4s;
+}
+
+.scrollDown span:nth-child(2) {
+    transform: translate(0, 0);
+    animation-delay: -0.2s;
+}
+
+.scrollDown span:nth-child(3) {
+    transform: translate(10px, 10px);
+    animation-delay: 0;
+}
+
+@keyframes animate {
+    0% {
+        top: -2px;
+        left: -2px;
+        opacity: 0;
+    }
+
+    25% {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        top: 2px;
+        left: 2px;
+        opacity: 0;
+    }
+}
+
+/* BackToTop + Progress button  */
+#progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: #001a2e;
+}
