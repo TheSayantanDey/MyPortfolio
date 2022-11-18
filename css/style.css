@@ -43,7 +43,7 @@ body{
     margin-top: 10px;
 }
 .logo img{
-    width: 50px;
+    width: 60px;
 }
 .downloadCV{
     right: 1.5%;
@@ -72,22 +72,6 @@ body{
     z-index: -1;
     cursor: pointer;
 }
-/* .hamburger span{
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    background-color: var(--theme-color);
-    border-radius: 4px;
-}
-.hamburger span:nth-child(1){
-    transform: translateY(0);
-}
-.hamburger span:nth-child(2){
-    transform: translateY(10px);
-}
-.hamburger span:nth-child(3){
-    transform: translateY(20px);
-} */
 .navItems{
     /* display: inline-block; */
     position: relative;
@@ -236,14 +220,28 @@ body{
     /* background-color: var(--theme-color); */
     border-radius: 63% 37% 84% 16% / 29% 14% 86% 71%  ;
 }
-.myImage img{
+.img{
     width: 23vw;
     filter: saturate(1) brightness(1.2);
+    transition: transform 0.5s ease-in-out;
 }
-/* .img:hover{
-    filter: saturate(1) brightness(1.2);
+/* .myImage:hover .img{
+    transform: translateX(5px) translateY(5px);
 } */
-
+.img2{
+    width: 40vw;
+    position: absolute;
+    top: 7vh;
+    /* bottom: 0; */
+    left: -5vw;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    filter: brightness(0.8);
+}
+.myImage:hover .img2{
+    /* transform: translateX(-5px); */
+    width: 40.5vw;
+}
 
 /* about section  */
 #about{
@@ -391,6 +389,7 @@ body{
 }
 .contactHead p{
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 .contactContent{
     display: flex;

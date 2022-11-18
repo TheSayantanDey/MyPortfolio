@@ -30,7 +30,7 @@
         transition: right 0.5s;
     }
     .navItems ul{
-        height: 90vh;
+        height: 40vh;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;

@@ -23,7 +23,7 @@ let calcScrollValue = () => {
 //scrollreveal code
 ScrollReveal({
     reset: true,
-    distance: '60px',
+    distance: '80px',
     duration: 2500,
     delay: 400,
 })
@@ -32,7 +32,7 @@ window.onload = calcScrollValue;
 // ScrollReveal().reveal('.navbar .logo', { delay: 50 ,origin: "top" });
 // ScrollReveal().reveal('.navbar .downloadCV', { delay: 50 ,origin: "top" });
 ScrollReveal().reveal('.introTexts div', { delay: 100, origin: "left", interval: 100 });
-ScrollReveal().reveal('.myImage', { delay: 100, origin: "right"});
+ScrollReveal().reveal('.myImage', { delay: 100, origin: ""});
 ScrollReveal().reveal('#about div', { delay: 300, origin: "bottom", interval: 70 });
 ScrollReveal().reveal('.socialMediaHandels a i', { delay: 300, origin: "bottom", interval: 50 });
 ScrollReveal().reveal('.socialMedia div', { delay: 500, origin: "bottom", interval: 50 });
