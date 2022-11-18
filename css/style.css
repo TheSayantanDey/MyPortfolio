@@ -488,3 +488,22 @@ body{
     padding: 5px;
     margin: 5px 10px;
 }
+#footer{
+    /* height: 10vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer p{
+    text-align: center;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.623);
+    padding: 5vh 30vw;
+    border-top: 1px solid white;
+}
+#footer p a{
+    color: rgba(255, 255, 255, 0.623);
+}
+#footer p a:hover{
+    color: white;
+}
